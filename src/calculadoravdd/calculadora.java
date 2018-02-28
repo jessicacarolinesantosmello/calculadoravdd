@@ -57,20 +57,60 @@ public class calculadora extends javax.swing.JFrame {
         });
 
         oito.setText("8");
+        oito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oitoActionPerformed(evt);
+            }
+        });
 
         nove.setText("9");
+        nove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                noveActionPerformed(evt);
+            }
+        });
 
         cinco.setText("5");
+        cinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cincoActionPerformed(evt);
+            }
+        });
 
         seis.setText("6");
+        seis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seisActionPerformed(evt);
+            }
+        });
 
         quatro.setText("4");
+        quatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quatroActionPerformed(evt);
+            }
+        });
 
         tres.setText("3");
+        tres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tresActionPerformed(evt);
+            }
+        });
 
         dois.setText("2");
+        dois.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doisActionPerformed(evt);
+            }
+        });
 
         um.setText("1");
+        um.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                umActionPerformed(evt);
+            }
+        });
 
         mais.setText("+");
         mais.addActionListener(new java.awt.event.ActionListener() {
@@ -80,12 +120,32 @@ public class calculadora extends javax.swing.JFrame {
         });
 
         menos.setText("-");
+        menos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosActionPerformed(evt);
+            }
+        });
 
         divisor.setText("/");
+        divisor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divisorActionPerformed(evt);
+            }
+        });
 
         vezes.setText("*");
+        vezes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vezesActionPerformed(evt);
+            }
+        });
 
         apagar.setText("Apagar");
+        apagar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                apagarActionPerformed(evt);
+            }
+        });
 
         resultado.setText("resultado ");
 
@@ -177,6 +237,21 @@ public class calculadora extends javax.swing.JFrame {
             resultado1.setText(String.valueOf(resul));
             
         }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
         }
         
         else{ 
@@ -188,6 +263,289 @@ public class calculadora extends javax.swing.JFrame {
     private void maisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maisActionPerformed
         operacao=mais.getActionCommand().charAt(0);
     }//GEN-LAST:event_maisActionPerformed
+
+    private void oitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oitoActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(oito.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(oito.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(oito.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_oitoActionPerformed
+
+    private void menosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menosActionPerformed
+operacao=menos.getActionCommand().charAt(0);        
+    }//GEN-LAST:event_menosActionPerformed
+
+    private void divisorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisorActionPerformed
+       operacao=divisor.getActionCommand().charAt(0);
+    }//GEN-LAST:event_divisorActionPerformed
+
+    private void vezesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vezesActionPerformed
+        operacao=vezes.getActionCommand().charAt(0);
+    }//GEN-LAST:event_vezesActionPerformed
+
+    private void noveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noveActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(nove.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(nove.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(nove.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_noveActionPerformed
+
+    private void quatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quatroActionPerformed
+        // TODO add your handling code here:
+        
+       resultado1.setText(quatro.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(quatro.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(quatro.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_quatroActionPerformed
+
+    private void cincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cincoActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(cinco.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(cinco.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(cinco.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_cincoActionPerformed
+
+    private void seisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seisActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(seis.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(seis.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(seis.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_seisActionPerformed
+
+    private void tresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tresActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(tres.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(tres.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(tres.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_tresActionPerformed
+
+    private void doisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doisActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(dois.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(dois.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(dois.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_doisActionPerformed
+
+    private void umActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_umActionPerformed
+        // TODO add your handling code here:
+        resultado1.setText(um.getActionCommand());
+        if(operacao=='+'||operacao=='+'||operacao=='/'||operacao=='*'){      
+        operando2=Integer.parseInt(um.getActionCommand());
+        if(operacao=='+'){
+            resul=operando1+operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='-'){
+            resul=operando1-operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='/'){
+            resul=operando1/operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        if(operacao=='*'){
+            resul=operando1*operando2;
+            resultado1.setText(String.valueOf(resul));
+            
+        }
+        }
+        
+        else{ 
+            operando1=Integer.parseInt(um.getActionCommand());
+            
+        } 
+    }//GEN-LAST:event_umActionPerformed
+
+    private void apagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagarActionPerformed
+        // TODO add your handling code here:
+        operacao=',';
+        resultado1.setText(String.valueOf("0"));
+    }//GEN-LAST:event_apagarActionPerformed
 
     /**
      * @param args the command line arguments
