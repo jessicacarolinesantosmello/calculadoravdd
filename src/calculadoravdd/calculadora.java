@@ -29,200 +29,184 @@ public class calculadora extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        resultado = new javax.swing.JLabel();
+        resultado1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         sete = new javax.swing.JButton();
         oito = new javax.swing.JButton();
         nove = new javax.swing.JButton();
+        divisor = new javax.swing.JButton();
+        quatro = new javax.swing.JButton();
         cinco = new javax.swing.JButton();
         seis = new javax.swing.JButton();
-        quatro = new javax.swing.JButton();
-        tres = new javax.swing.JButton();
-        dois = new javax.swing.JButton();
-        um = new javax.swing.JButton();
-        mais = new javax.swing.JButton();
-        menos = new javax.swing.JButton();
-        divisor = new javax.swing.JButton();
         vezes = new javax.swing.JButton();
-        apagar = new javax.swing.JButton();
-        resultado = new javax.swing.JLabel();
-        resultado1 = new javax.swing.JTextField();
+        um = new javax.swing.JButton();
+        dois = new javax.swing.JButton();
+        tres = new javax.swing.JButton();
+        menos = new javax.swing.JButton();
         zero = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        mais = new javax.swing.JButton();
+        apagar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 204, 204));
+        getContentPane().setLayout(new java.awt.GridLayout(-1, 4));
 
+        resultado.setText("resultado ");
+        getContentPane().add(resultado);
+
+        resultado1.setEditable(false);
+        getContentPane().add(resultado1);
+        getContentPane().add(jLabel1);
+        getContentPane().add(jLabel2);
+
+        sete.setBackground(new java.awt.Color(255, 0, 153));
+        sete.setForeground(new java.awt.Color(255, 153, 255));
         sete.setText("7");
         sete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seteActionPerformed(evt);
             }
         });
+        getContentPane().add(sete);
 
+        oito.setBackground(new java.awt.Color(255, 0, 153));
+        oito.setForeground(new java.awt.Color(255, 153, 255));
         oito.setText("8");
         oito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 oitoActionPerformed(evt);
             }
         });
+        getContentPane().add(oito);
 
+        nove.setBackground(new java.awt.Color(255, 0, 153));
+        nove.setForeground(new java.awt.Color(255, 153, 255));
         nove.setText("9");
         nove.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 noveActionPerformed(evt);
             }
         });
+        getContentPane().add(nove);
 
-        cinco.setText("5");
-        cinco.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cincoActionPerformed(evt);
-            }
-        });
-
-        seis.setText("6");
-        seis.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                seisActionPerformed(evt);
-            }
-        });
-
-        quatro.setText("4");
-        quatro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                quatroActionPerformed(evt);
-            }
-        });
-
-        tres.setText("3");
-        tres.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tresActionPerformed(evt);
-            }
-        });
-
-        dois.setText("2");
-        dois.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                doisActionPerformed(evt);
-            }
-        });
-
-        um.setText("1");
-        um.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                umActionPerformed(evt);
-            }
-        });
-
-        mais.setText("+");
-        mais.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                maisActionPerformed(evt);
-            }
-        });
-
-        menos.setText("-");
-        menos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menosActionPerformed(evt);
-            }
-        });
-
+        divisor.setBackground(new java.awt.Color(255, 0, 153));
+        divisor.setForeground(new java.awt.Color(255, 153, 255));
         divisor.setText("/");
         divisor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 divisorActionPerformed(evt);
             }
         });
+        getContentPane().add(divisor);
 
+        quatro.setBackground(new java.awt.Color(255, 0, 153));
+        quatro.setForeground(new java.awt.Color(255, 153, 255));
+        quatro.setText("4");
+        quatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quatroActionPerformed(evt);
+            }
+        });
+        getContentPane().add(quatro);
+
+        cinco.setBackground(new java.awt.Color(255, 0, 153));
+        cinco.setForeground(new java.awt.Color(255, 153, 255));
+        cinco.setText("5");
+        cinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cincoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cinco);
+
+        seis.setBackground(new java.awt.Color(255, 0, 153));
+        seis.setForeground(new java.awt.Color(255, 153, 255));
+        seis.setText("6");
+        seis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                seisActionPerformed(evt);
+            }
+        });
+        getContentPane().add(seis);
+
+        vezes.setBackground(new java.awt.Color(255, 0, 153));
+        vezes.setForeground(new java.awt.Color(255, 153, 255));
         vezes.setText("*");
         vezes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 vezesActionPerformed(evt);
             }
         });
+        getContentPane().add(vezes);
 
-        apagar.setText("Apagar");
+        um.setBackground(new java.awt.Color(255, 0, 153));
+        um.setForeground(new java.awt.Color(255, 153, 255));
+        um.setText("1");
+        um.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                umActionPerformed(evt);
+            }
+        });
+        getContentPane().add(um);
+
+        dois.setBackground(new java.awt.Color(255, 0, 153));
+        dois.setForeground(new java.awt.Color(255, 153, 255));
+        dois.setText("2");
+        dois.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doisActionPerformed(evt);
+            }
+        });
+        getContentPane().add(dois);
+
+        tres.setBackground(new java.awt.Color(255, 0, 153));
+        tres.setForeground(new java.awt.Color(255, 153, 255));
+        tres.setText("3");
+        tres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tresActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tres);
+
+        menos.setBackground(new java.awt.Color(255, 0, 153));
+        menos.setForeground(new java.awt.Color(255, 153, 255));
+        menos.setText("-");
+        menos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menosActionPerformed(evt);
+            }
+        });
+        getContentPane().add(menos);
+
+        zero.setBackground(new java.awt.Color(255, 0, 153));
+        zero.setForeground(new java.awt.Color(255, 153, 255));
+        zero.setText("0");
+        getContentPane().add(zero);
+        getContentPane().add(jLabel3);
+
+        mais.setBackground(new java.awt.Color(255, 0, 153));
+        mais.setForeground(new java.awt.Color(255, 153, 255));
+        mais.setText("+");
+        mais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                maisActionPerformed(evt);
+            }
+        });
+        getContentPane().add(mais);
+
+        apagar.setBackground(new java.awt.Color(255, 0, 153));
+        apagar.setForeground(new java.awt.Color(255, 153, 255));
+        apagar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/calculadoravdd/apagar.png"))); // NOI18N
         apagar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 apagarActionPerformed(evt);
             }
         });
-
-        resultado.setText("resultado ");
-
-        resultado1.setEditable(false);
-
-        zero.setText("0");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(quatro)
-                    .addComponent(sete)
-                    .addComponent(tres))
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(resultado1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(oito)
-                            .addComponent(cinco)
-                            .addComponent(dois))
-                        .addGap(53, 53, 53)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nove)
-                            .addComponent(seis)
-                            .addComponent(um))
-                        .addGap(46, 46, 46)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(menos)
-                            .addComponent(mais)
-                            .addComponent(zero))
-                        .addGap(46, 46, 46)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(vezes)
-                            .addComponent(divisor)
-                            .addComponent(apagar, javax.swing.GroupLayout.Alignment.LEADING))))
-                .addContainerGap(28, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(sete)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(oito)
-                        .addComponent(nove)
-                        .addComponent(mais)
-                        .addComponent(divisor)))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cinco)
-                    .addComponent(seis)
-                    .addComponent(quatro)
-                    .addComponent(menos)
-                    .addComponent(vezes))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dois)
-                    .addComponent(tres)
-                    .addComponent(um)
-                    .addComponent(apagar)
-                    .addComponent(zero))
-                .addGap(18, 18, 18)
-                .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(resultado1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(106, Short.MAX_VALUE))
-        );
+        getContentPane().add(apagar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -359,7 +343,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -392,7 +376,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -425,7 +409,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -458,7 +442,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -491,7 +475,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -524,7 +508,7 @@ operacao=menos.getActionCommand().charAt(0);
             
         }
         if(operacao=='/'){
-            resul=operando1/operando2;
+            resul=(float)operando1/operando2;
             resultado1.setText(String.valueOf(resul));
             
         }
@@ -585,12 +569,15 @@ operacao=menos.getActionCommand().charAt(0);
     private int operando1;
     private int operando2;
     private char operacao;
-    private int resul;
+    private float resul;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton apagar;
     private javax.swing.JButton cinco;
     private javax.swing.JButton divisor;
     private javax.swing.JButton dois;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton mais;
     private javax.swing.JButton menos;
     private javax.swing.JButton nove;
